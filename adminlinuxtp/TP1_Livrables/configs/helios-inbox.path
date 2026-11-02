@@ -1,7 +1,0 @@
-[Path]
-# PathChanged evite un declenchement en boucle tant que l'inbox n'est pas vide.
-PathChanged=/srv/helios/inbox
-Unit=helios-archive.service
-
-[Install]
-WantedBy=paths.target

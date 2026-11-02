@@ -1,8 +1,0 @@
-FICHIER A GENERER SUR srv-core — sortie reelle non presente dans les captures.
-
-Commande a executer :
-nmcli -f all con show bond0 > bond0.txt
-
-Les captures fournies confirment le profil bond0 actif, l'adresse 10.42.0.10/24,
-le mode active-backup, les esclaves enp0s9 et enp0s10, et un lien actif enp0s9
-au moment de la capture initiale. Ce texte n'est pas la sortie complete de nmcli.
