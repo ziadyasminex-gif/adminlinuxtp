@@ -1,0 +1,3 @@
+# Edition encadree des fichiers du partage transport
+Defaults:nadia !sudoedit_checkdir
+nadia ALL=(root) sudoedit /srv/helios/projets/transport/*

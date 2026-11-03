@@ -1,0 +1,11 @@
+--- /etc/login.defs (avant)
++++ /etc/login.defs (Helios TP2)
+@@
+-PASS_MAX_DAYS   <ancienne_valeur>
++PASS_MAX_DAYS   90
+-PASS_MIN_DAYS   <ancienne_valeur>
++PASS_MIN_DAYS   1
+-PASS_WARN_AGE   <ancienne_valeur>
++PASS_WARN_AGE   14
+-UMASK           <ancienne_valeur>
++UMASK           027

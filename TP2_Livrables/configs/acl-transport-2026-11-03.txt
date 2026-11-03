@@ -1,0 +1,31 @@
+# EXTRAIT RECONSTITUE depuis les sorties getfacl visibles dans MISSION 2.docx
+# Ce fichier n'est PAS la sauvegarde exhaustive originale du serveur.
+# Récupérer /root/helios-backup/transport.acl depuis srv-core pour la copie exacte.
+
+# file: /srv/helios/projets/transport
+# owner: julien
+# group: transport
+user::rwx
+user:audit-ext:r-x
+ group::rwx
+mask::rwx
+other::---
+default:user::rwx
+default:user:audit-ext:r--
+default:group::rwx
+default:group:transport:rwx
+default:mask::rwx
+default:other::---
+
+# Exemple de fichier hérité : test-heritage-acl.txt
+# owner: nadia
+# group: transport
+user::rw-
+user:audit-ext:r--
+ group::rwx                 #effective:rw-
+mask::rw-
+other::---
+
+# Exemple de test du masque sur tournee-j2.csv :
+# chmod g-w réduit le masque et les droits effectifs des entrées nommées.
+# Après setfacl -m m::rwx, l'écriture de Tarek est de nouveau possible.
