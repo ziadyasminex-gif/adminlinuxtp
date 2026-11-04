@@ -1,0 +1,10 @@
+[Unit]
+Description=Helios SSH authentication failure watcher
+After=network-online.target firewalld.service
+Wants=network-online.target
+
+[Service]
+Type=oneshot
+ExecStart=/usr/local/sbin/helios-watch-auth.sh
+User=root
+Group=root
